@@ -85,16 +85,16 @@ https://blog-static.cnblogs.com/files/esofar/silence.min.js
 
 进入『[设置](https://i.cnblogs.com/Configure.aspx)』界面，将如下脚本代码引用 **追加** 到「博客侧边栏公告」文本域中。
 
-```
+```js
 <script type="text/javascript">
     $.silence({
         profile: {
-            enable: true,
+            enable: false,
             avatar: 'http://images.cnblogs.com/cnblogs_com/esofar/972540/o_avatar.jpg',
             favicon: 'https://files.cnblogs.com/files/esofar/favicon.ico',
         },
         catalog: {
-            enable: true,
+            enable: false,
             move: true,
             index: true,
             level1: 'h2',

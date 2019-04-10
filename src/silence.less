@@ -1,6 +1,6 @@
-// @import "./themes/default.less";
+@import "./themes/default.less";
 // @import "./themes/goddess.less";
-@import "./themes/dark.less";
+// @import "./themes/dark.less";
 
 body {
     background: @blog-bg-color;
@@ -19,10 +19,13 @@ a {
 }
 
 /* 隐藏 DOM */
-
+#blog_post_info,
+#navList,
 .blogStats,
 .dayTitle,
 .c_ad_block,
+#div_digg,
+#profile_block,
 #sidebar_search,
 #ad_t2,
 #ad_c1,
@@ -142,9 +145,12 @@ a {
                 transition: all .3s;
             }
 
-            &:hover {
+            &:hover {v
                 background: transparent;
             }
+        }
+        #blog_nav_admin{
+            display: none;
         }
     }
 }
@@ -177,12 +183,12 @@ a {
 /* 侧边栏 */
 
 #sideBar {
-    border-right: 1px solid @blog-border-color;
+    border-right: 0px solid @blog-border-color;
     font-weight: 300;
     display: none;
+    visibility:hidden;
     min-height: 750px;
     padding: 0px;
-
     #profile_block {
         margin-top: 0px;
         font-size: 15px;
@@ -1526,9 +1532,9 @@ a {
         margin-left: 0px;
     }
 
-    .esa-mobile-menu {
-        display: block;
-    }
+    // .esa-mobile-menu {
+    //     display: block;
+    // }
 
     .forFlow {
         margin-right: 0px;
@@ -1598,3 +1604,4 @@ a {
         }
     }
 }
+

@@ -4,7 +4,9 @@
   "description": "一款专注于阅读的博客园主题",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run buildcss&npm run buildjs",
+    "buildcss": "lessc src/silence.less dist/themes/example.min.css -clean-css",
+    "buildjs": "babel src/silence.js -o src/silence.es5.js&uglifyjs src/silence.es5.js -o dist/silence.min.js -c -m"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,6 @@
     "less-plugin-clean-css": "^1.5.1"
   },
   "dependencies": {
-
+    "express": "^4.16.4"
   }
 }

@@ -137,7 +137,7 @@
             let $win = $(window);
             if ($win.width() > 767) {
                 $(this.cnblogs.forFlow).css({
-                    marginLeft: '22em'
+                    marginLeft: '5vem'
                 });
                 $(this.cnblogs.sideBar).fadeIn(500);
             }
@@ -594,3 +594,39 @@
         }
     }
 })(jQuery);
+
+$.silence({
+    profile: {
+        enable: false,
+        avatar: 'https://pic.cnblogs.com/avatar/1328440/20180201224531.png',
+        favicon: 'https://files.cnblogs.com/files/esofar/favicon.ico',
+    },
+    catalog: {
+        enable: false,
+        move: true,
+        index: true,
+        level1: 'h2',
+        level2: 'h3',
+        level3: 'h4',
+    },
+    signature: {
+        enable: true,
+        home: 'http://blog.esofar.cn',
+        license: 'CC BY 4.0',
+        link: 'https://creativecommons.org/licenses/by/4.0'
+    },
+    reward: {
+        enable: true,
+        title: '请我喝杯咖啡会写的更来劲哦',
+        wechat: 'https://images.cnblogs.com/cnblogs_com/esofar/972540/o_wechat.png',
+        alipay: 'https://images.cnblogs.com/cnblogs_com/esofar/972540/o_alipay.png'
+    },
+    github: {
+        enable: true,
+        color: '#fff',
+        fill: null,
+        link: 'https://github.com/esofar'
+    }
+});
+
+$('#navList').append('<li><a id="blog_nav_github" class="menu" href="https://github.com/jihuayu" rel="nofollow"><a><i></i></li>');
